@@ -1,4 +1,3 @@
-"# ElementsProject" 
-"# ElementsProject" 
-"# ElementsProject" 
-"# ElementsProject" 
+Версия проекта "1~1beta"
+  *Сделана основная разметка страницы.
+Версия проекта "1~2beta"
