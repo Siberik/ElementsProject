@@ -28,9 +28,7 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        <StackPanel Orientation="Vertical">
-            
-        </StackPanel>
+        
 
     </Grid>
 </Window>  
