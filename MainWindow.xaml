@@ -105,6 +105,10 @@
                 </TreeViewItem>
             </TreeView>
         </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="3" HorizontalAlignment="Center">
+            <Slider Maximum="100" Minimum="1" Value="26" Margin="30,10,10,10" Orientation="Vertical" Height="100" Style="{StaticResource SliderGreen}"/>
+            <Slider Maximum="100" Minimum="1" Value="61" Margin="10" Orientation="Vertical" Height="100" TickFrequency="10" TickPlacement="Both"  Style="{StaticResource SliderGreen}"/>
+        </StackPanel>
     </Grid>
 </Window>  
     
