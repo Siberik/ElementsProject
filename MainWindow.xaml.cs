@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Schema;
 
 namespace ElemetsProject
 {
@@ -24,6 +25,28 @@ namespace ElemetsProject
         {
             InitializeComponent();
          
+        }
+
+       
+
+        private void NormalButtonClick(object sender, RoutedEventArgs e)
+        {
+           NormalButton.Background = Brushes.Blue;
+        }
+
+        private void ToggleButtonClick(object sender, RoutedEventArgs e)
+        {
+            if (ToggleButton.IsChecked == true)
+            {
+                ToggleButton.Content = "Сейчас true";
+            }
+            if (ToggleButton.IsChecked == false)
+            {
+                ToggleButton.Content = "Сейчас false";
+            }
+
+
+
         }
     }
 }

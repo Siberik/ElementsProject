@@ -30,10 +30,10 @@
         </Grid.RowDefinitions>
         <StackPanel HorizontalAlignment="Center">
             <Label Content="Кнопочки Button" HorizontalAlignment="Center"/>
-            <StackPanel>
-            <Button Height="40" MaxWidth="150" ToolTip="Normal Button" Content="Обычная"/>
+            <StackPanel >
+                <Button x:Name="NormalButton" Height="40"  Margin="10,10" MaxWidth="150" ToolTip="Normal Button" Content="Обычная" Click="NormalButtonClick" Style="{StaticResource ButtonLavender}"/>
             <Button Height="40" Margin="10,10" MaxWidth="150" IsEnabled="False" ToolTip="Disabled" Content="Недоступная"/>
-            <ToggleButton Height="40" Margin="10,10" MaxWidth="150" ToolTip="Toggle" Content="Переключашка"/>
+            <ToggleButton x:Name="ToggleButton" Height="40" MaxWidth="150" Margin="10,10"  ToolTip="Toggle" Content="Переключашка" Click="ToggleButtonClick"/>
         </StackPanel>
         </StackPanel>
         <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Stretch">
@@ -57,7 +57,7 @@
         </StackPanel>
         
         <StackPanel Grid.Column="3"  HorizontalAlignment="Center">
-            <Label>GroupBox</Label>
+            <Label Content="Группирование" HorizontalAlignment="Center"/>
             <GroupBox Header="Как ваше настроение?)" Margin="10" Height="200" Padding="10" Width="180">
                 <StackPanel>
 
@@ -76,23 +76,19 @@
         <StackPanel Grid.Row="2" Grid.Column="1">
             <Label Content="Выбарть дату" HorizontalAlignment="Center"/>
             <DatePicker Margin="10" Height="26" Width="100"/>
-                <DatePicker Margin="10,2" Height="26" Width="100" IsEnabled="False"/>
+            <DatePicker Margin="10,2" Height="26" Width="100" IsEnabled="False"/>
             </StackPanel>
         <StackPanel Grid.Row="2" Grid.Column="2">
             <Label Content="Загрузочка ProgressBar" HorizontalAlignment="Center"/>
-            <ProgressBar Margin="10" Value="34"/>
-            <ProgressBar Margin="10" Value="69"/>
-            <ProgressBar IsIndeterminate="True" Margin="10" />
-            <StackPanel Margin="10" Orientation="Horizontal">
-                <ProgressBar Orientation="Vertical" Margin="10,5" Value="34" Width="20" Height="150" HorizontalAlignment="Left"/>
-                <ProgressBar Orientation="Vertical" Margin="10,5" Value="100" Width="20" Height="150" HorizontalAlignment="Left"/>
-                <ProgressBar Orientation="Vertical" Margin="10,5" Value="26" Width="20" Height="150" HorizontalAlignment="Left"/>
-            </StackPanel>
+            <ProgressBar Margin="10" Value="34" Style="{StaticResource ProgressBarYellow}"/>
+            <ProgressBar Margin="10" Value="69" IsIndeterminate="False" Style="{StaticResource ProgressBarYellow}"/>
+            <ProgressBar IsIndeterminate="True" Margin="10" Style="{StaticResource ProgressBarYellow}"/>
         </StackPanel>
 
         <StackPanel Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Center">
             <Label Content="Списочек" HorizontalAlignment="Center"/>
-            <TreeView MaxHeight="180" Margin="10" Width="200">
+
+            <TreeView MaxHeight="180" Margin="10" Width="200" Style="{StaticResource TreeViewSilver}">
                 <TreeViewItem Header="Заголовок 1" IsExpanded="True">
                     <TreeViewItem Header="Текст 1 1"/>
                     <TreeViewItem Header="Текст 1 2" IsExpanded="True">
