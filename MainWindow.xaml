@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ElemetsProject"
         mc:Ignorable="d"
-        Title="Элементы управления" MinHeight="480" MinWidth="640" Icon="./Assets/Images/icon.png">
+        Title="Элементы управления" MinHeight="480" MinWidth="640" Icon="./Assets/Images/icon.png" Background="PaleTurquoise">
 
 
     <Grid>
@@ -29,20 +29,85 @@
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <StackPanel HorizontalAlignment="Center">
-            <Label Content="Кнопочки" HorizontalAlignment="Center"/>
+            <Label Content="Кнопочки Button" HorizontalAlignment="Center"/>
             <Button Height="40" Margin="10" MaxWidth="150" ToolTip="Normal Button" Content="Обычная"/>
             <Button Height="40" Margin="10,10" MaxWidth="150" IsEnabled="False" ToolTip="Disabled" Content="Недоступная"/>
             <ToggleButton Height="40" Margin="10,10" MaxWidth="150" ToolTip="Toggle" Content="Переключашка"/>
         </StackPanel>
         
-        <StackPanel Grid.Column="1" HorizontalAlignment="Center">
-            <Label Content="Проверка" HorizontalAlignment="Center"/>
+        <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Stretch">
+            <Label Content="Кнопки с несколькими вариантами CheckBox" HorizontalAlignment="Center"/>
+            <StackPanel HorizontalAlignment="Center">
             <CheckBox Margin="10" Content="Не нажата"/>
             <CheckBox IsChecked="True" Margin="10,0" Content="Нажата"/>
             <CheckBox IsChecked="{x:Null}" Margin="10" Content="Нолик"/>
             <CheckBox IsEnabled="False" Margin="10,0" Content="Неактивна"/>
         </StackPanel>
+        </StackPanel>
+        
+        <StackPanel  Grid.Column="2" HorizontalAlignment="Center">
+            <Label Content="Выбор RadioBurron"/>
+            <StackPanel HorizontalAlignment="Center">
+            <RadioButton Margin="10" Content="Не нажата"/>
+            <RadioButton IsChecked="True" Margin="10,0" Content="Нажата"/>
+            <RadioButton IsChecked="{x:Null}" Margin="10" Content="Нолик"/>
+            <RadioButton IsEnabled="False" Margin="10,0" Content="Отключена"/>
+        </StackPanel>
+        </StackPanel>
+        
+        <StackPanel Grid.Column="3"  HorizontalAlignment="Center">
+            <Label>GroupBox</Label>
+            <GroupBox Header="Как ваше настроение?)" Margin="10" Height="200" Padding="10" Width="180">
+                <StackPanel>
 
+                    <RadioButton Margin="0,10" Content="Всё прекрасно"/>
+                    <RadioButton IsChecked="True" Content="Лучше некуда"/>
+                    <RadioButton Margin="0,10" Content="Хорошо"/>
+                    <RadioButton Content="Замечательно"/> 
+
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+        <StackPanel Grid.Row="2">
+            <Label Content="Календарик" HorizontalAlignment="Center"/>
+            <Calendar x:Name="calendar"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1">
+            <Label Content="Выбарть дату" HorizontalAlignment="Center"/>
+            <DatePicker Margin="10" Height="26" Width="100"/>
+                <DatePicker Margin="10,2" Height="26" Width="100" IsEnabled="False"/>
+            </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="2">
+            <Label Content="Загрузочка ProgressBar" HorizontalAlignment="Center"/>
+            <ProgressBar Margin="10" Value="34"/>
+            <ProgressBar Margin="10" Value="69"/>
+            <ProgressBar IsIndeterminate="True" Margin="10" />
+            <StackPanel Margin="10" Orientation="Horizontal">
+                <ProgressBar Orientation="Vertical" Margin="10,5" Value="34" Width="20" Height="150" HorizontalAlignment="Left"/>
+                <ProgressBar Orientation="Vertical" Margin="10,5" Value="100" Width="20" Height="150" HorizontalAlignment="Left"/>
+                <ProgressBar Orientation="Vertical" Margin="10,5" Value="26" Width="20" Height="150" HorizontalAlignment="Left"/>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+            <Label Content="Списочек" HorizontalAlignment="Center"/>
+            <TreeView MaxHeight="180" Margin="10" Width="200">
+                <TreeViewItem Header="Заголовок 1" IsExpanded="True">
+                    <TreeViewItem Header="Текст 1 1"/>
+                    <TreeViewItem Header="Текст 1 2" IsExpanded="True">
+                        <TreeViewItem Header="Текст 1 2 1"/>
+                        <TreeViewItem Header="Текст 1 2 2"/>
+                        <TreeViewItem Header="Текст 1 2 3"/>
+                    </TreeViewItem>
+                    <TreeViewItem Header="Текст 1 3"/>
+                    <TreeViewItem Header="Текст 1 4"/>
+                    <TreeViewItem Header="Текст 1 5"/>
+                </TreeViewItem>
+                <TreeViewItem Header="Заголовок 2" IsExpanded="True">
+                    <TreeViewItem Header="Disabled Item" IsEnabled="False"/>
+                </TreeViewItem>
+            </TreeView>
+        </StackPanel>
     </Grid>
 </Window>  
     
