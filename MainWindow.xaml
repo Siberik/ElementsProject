@@ -30,11 +30,12 @@
         </Grid.RowDefinitions>
         <StackPanel HorizontalAlignment="Center">
             <Label Content="Кнопочки Button" HorizontalAlignment="Center"/>
-            <Button Height="40" Margin="10" MaxWidth="150" ToolTip="Normal Button" Content="Обычная"/>
+            <StackPanel>
+            <Button Height="40" MaxWidth="150" ToolTip="Normal Button" Content="Обычная"/>
             <Button Height="40" Margin="10,10" MaxWidth="150" IsEnabled="False" ToolTip="Disabled" Content="Недоступная"/>
             <ToggleButton Height="40" Margin="10,10" MaxWidth="150" ToolTip="Toggle" Content="Переключашка"/>
         </StackPanel>
-        
+        </StackPanel>
         <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Stretch">
             <Label Content="Кнопки с несколькими вариантами CheckBox" HorizontalAlignment="Center"/>
             <StackPanel HorizontalAlignment="Center">

@@ -4,9 +4,38 @@
              xmlns:local="clr-namespace:ElemetsProject"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <FontFamily x:Key="Matricha">pack://application:,,,/Assets/Fonts/matricha.ttf#Matricha
+        <FontFamily x:Key="Heading"> 
+            pack://application:,,,/Assets/Fonts/Cyberpunk.ttf#Cyberpunk
         </FontFamily>
-        
+        <FontFamily x:Key="Text">
+            pack://application:,,,/Assets/Fonts/New Zelek.ttf#New_Zelek
+        </FontFamily>
+
+       
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="FontFamily" Value="New_Zelek" />
+        </Style>
+        <Style TargetType="{x:Type CheckBox}">
+            <Setter Property="FontFamily" Value="New_Zelek" />
+        </Style>
+        <Style TargetType="{x:Type RadioButton}">
+            <Setter Property="FontFamily" Value="New_Zelek" />
+        </Style>
+        <Style TargetType="{x:Type DatePicker}">
+            <Setter Property="FontFamily" Value="New_Zelek" />
+        </Style>
+        <Style TargetType="{x:Type Calendar}">
+            <Setter Property="FontFamily" Value="New_Zelek" />
+        </Style>
+        <Style TargetType="{x:Type ProgressBar}">
+            <Setter Property="FontFamily" Value="New_Zelek" />
+        </Style>
+        <Style TargetType="{x:Type TreeView}">
+            <Setter Property="FontFamily" Value="New_Zelek" />
+        </Style>
+        <Style TargetType="{x:Type Label}">
+            <Setter  Property="Control.FontFamily" Value="Cyberpunk"/>
+        </Style>
 
     </Application.Resources>
 </Application>

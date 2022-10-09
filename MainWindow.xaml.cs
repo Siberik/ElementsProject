@@ -23,6 +23,7 @@ namespace ElemetsProject
         public MainWindow()
         {
             InitializeComponent();
+         
         }
     }
 }
