@@ -14,3 +14,4 @@ C:\Users\Vlad\source\repos\ElemetsProject\obj\Debug\ElemetsProject.csproj.Genera
 C:\Users\Vlad\source\repos\ElemetsProject\obj\Debug\ElemetsProject.csproj.CoreCompileInputs.cache
 C:\Users\Vlad\source\repos\ElemetsProject\obj\Debug\ElemetsProject.exe
 C:\Users\Vlad\source\repos\ElemetsProject\obj\Debug\ElemetsProject.pdb
+C:\Users\Vlad\source\repos\ElemetsProject\obj\Debug\App.baml

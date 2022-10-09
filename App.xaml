@@ -4,6 +4,9 @@
              xmlns:local="clr-namespace:ElemetsProject"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <FontFamily x:Key="Matricha">pack://application:,,,/Assets/Fonts/matricha.ttf#Matricha
+        </FontFamily>
+        
+
     </Application.Resources>
 </Application>

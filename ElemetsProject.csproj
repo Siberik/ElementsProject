@@ -96,6 +96,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Assets\Dictionaries\" />
     <Folder Include="Model\" />
     <Folder Include="Views\Pages\" />
   </ItemGroup>

@@ -28,7 +28,20 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Center">
+            <Label Content="Кнопочки" HorizontalAlignment="Center"/>
+            <Button Height="40" Margin="10" MaxWidth="150" ToolTip="Normal Button" Content="Обычная"/>
+            <Button Height="40" Margin="10,10" MaxWidth="150" IsEnabled="False" ToolTip="Disabled" Content="Недоступная"/>
+            <ToggleButton Height="40" Margin="10,10" MaxWidth="150" ToolTip="Toggle" Content="Переключашка"/>
+        </StackPanel>
         
+        <StackPanel Grid.Column="1" HorizontalAlignment="Center">
+            <Label Content="Проверка" HorizontalAlignment="Center"/>
+            <CheckBox Margin="10" Content="Не нажата"/>
+            <CheckBox IsChecked="True" Margin="10,0" Content="Нажата"/>
+            <CheckBox IsChecked="{x:Null}" Margin="10" Content="Нолик"/>
+            <CheckBox IsEnabled="False" Margin="10,0" Content="Неактивна"/>
+        </StackPanel>
 
     </Grid>
 </Window>  
